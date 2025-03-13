@@ -120,5 +120,10 @@ namespace PDFiumSharp
 		{
 			PDFium.FPDF_ClosePage(handle);
 		}
+
+		public void Dispose()
+		{
+			PDFium.FPDF_ClosePage(Handle);
+		}
 	}
 }
